@@ -5,7 +5,7 @@ import {Task} from "./class/task.js";
 const BACKEND_ROOT_URL = 'http://localhost:3001';
 const todos = new Todos(BACKEND_ROOT_URL);
 
-// domReady(() => {
+domReady(() => {
     const list = <HTMLUListElement>document.querySelector('#todoList')
     const input = <HTMLInputElement>document.querySelector('#newTodo')
     input.disabled = true;
@@ -67,7 +67,7 @@ const todos = new Todos(BACKEND_ROOT_URL);
     })
   }
   
-// });
+});
 
 function domReady(cb: Function): void {
     if (document.readyState === "complete" || document.readyState === "interactive") {
