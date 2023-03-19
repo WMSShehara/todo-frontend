@@ -1,6 +1,7 @@
 import { Todos } from "./class/todos.js";
 domReady(() => {
-    const BACKEND_ROOT_URL = 'http://localhost:3001';
+    const BACKEND_ROOT_URL = ' https://todo-backend-yrk9.onrender.com';
+    // const BACKEND_ROOT_URL = 'http://localhost:3001';
     const todos = new Todos(BACKEND_ROOT_URL);
     const list = document.querySelector('#todoList');
     const input = document.querySelector('#newTodo');
